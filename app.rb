@@ -1,8 +1,8 @@
+require File.join(File.dirname(__FILE__), 'secret.rb')
 require 'sinatra'
 require 'uri'
 require 'net/http'
 require 'json'
-require_relative "secret"
 
 ERROR = { "error" => "invalid_params", "error_description" => "Access Token not found" }.to_json
 
